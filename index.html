@@ -8,42 +8,35 @@
 <meta property="og:title" content="A.K.M. Aminul Islam — A.K &amp; Associates">
 <meta property="og:description" content="GM (Admin), A.K &amp; Associates. Tap to save contact or call.">
 <meta property="og:type" content="profile">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230B0E1A'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%238B7CF6' stroke-width='1.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='22' fill='%23F4F5F7' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FFFFFF'/%3E%3Ccircle cx='32' cy='32' r='29' fill='none' stroke='%231E4FD8' stroke-width='2'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='22' fill='%231E4FD8' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg-0:#0B0E1A;
-    --bg-1:#111528;
-    --glow-a:#6366F1;
-    --glow-b:#A855F7;
-    --card-bg: rgba(255,255,255,0.055);
-    --card-border: rgba(255,255,255,0.12);
-    --text:#F4F5F7;
-    --text-muted:#9AA0B4;
-    --primary:#9C8CFB;
-    --primary-deep:#7C6AE8;
-    --divider: rgba(255,255,255,0.14);
-    --row-hover: rgba(255,255,255,0.05);
-    --focus:#B7ABFC;
+    --bg:#FFFFFF;
+    --surface:#F4F7FC;
+    --blue:#1E4FD8;
+    --blue-deep:#17399E;
+    --ink:#0B1730;
+    --ink-soft:#5B6784;
+    --border:#DCE3F0;
+    --row-hover:#F0F4FC;
+    --focus:#1E4FD8;
   }
 
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     min-height:100vh;
-    background:
-      radial-gradient(60% 50% at 50% 0%, rgba(99,102,241,0.20), transparent 70%),
-      var(--bg-0);
-    color:var(--text);
+    background: var(--bg);
+    color:var(--ink);
     font-family:'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
     display:flex;
     justify-content:center;
     align-items:flex-start;
     padding: 9vh 20px 10vh;
     -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
   }
 
   a{color:inherit;}
@@ -59,43 +52,24 @@
     font-size: 0.62rem;
     letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--ink-soft);
     margin: 0 0 28px;
   }
 
-  /* ---- Glass card ---- */
   .card-wrap{
-    position:relative;
     width:100%;
     max-width: 380px;
   }
-  .glow{
-    position:absolute;
-    inset: -18px;
-    z-index:-1;
-    border-radius: 32px;
-    background: linear-gradient(120deg, var(--glow-a), var(--glow-b));
-    opacity:0.45;
-    filter: blur(38px);
-    animation: breathe 6s ease-in-out infinite;
-  }
-  @keyframes breathe{
-    0%,100%{ opacity:0.4; transform:scale(1); }
-    50%{ opacity:0.6; transform:scale(1.04); }
-  }
 
   .card{
-    position:relative;
     display:flex;
     flex-direction:column;
     align-items:center;
     padding: 40px 30px 32px;
-    border-radius: 28px;
-    border: 1px solid var(--card-border);
-    background: var(--card-bg);
-    backdrop-filter: blur(22px);
-    -webkit-backdrop-filter: blur(22px);
-    box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    box-shadow: 0 4px 24px rgba(30,79,216,0.08);
   }
 
   .avatar-ring{
@@ -103,7 +77,7 @@
     height: 104px;
     border-radius: 50%;
     padding: 3px;
-    background: linear-gradient(135deg, var(--glow-a), var(--glow-b));
+    background: var(--blue);
     margin-bottom: 18px;
   }
   .avatar-ring img{
@@ -113,7 +87,7 @@
     object-fit: cover;
     object-position: 50% 22%;
     display:block;
-    border: 2px solid var(--bg-0);
+    border: 2px solid var(--bg);
   }
 
   h1{
@@ -123,20 +97,20 @@
     line-height:1.2;
     text-align:center;
     margin: 0 0 6px;
-    color: var(--text);
+    color: var(--ink);
   }
   .role{
     text-align:center;
     font-size: 0.85rem;
-    font-weight:500;
-    color: var(--primary);
+    font-weight:600;
+    color: var(--blue);
     margin: 0 0 16px;
   }
   .bio{
     text-align:center;
     font-size: 0.85rem;
     line-height:1.6;
-    color: var(--text-muted);
+    color: var(--ink-soft);
     margin: 0;
     max-width: 300px;
   }
@@ -144,7 +118,7 @@
   .divider{
     width: 48px;
     height: 1px;
-    background: var(--divider);
+    background: var(--border);
     margin: 24px 0;
     border:none;
   }
@@ -170,28 +144,41 @@
   }
   .btn svg{ transition: transform 0.3s ease; }
   .btn-primary{
-    background: linear-gradient(135deg, var(--glow-a), var(--glow-b));
+    background: var(--blue);
     color: #fff;
-    box-shadow: 0 4px 20px rgba(99,102,241,0.35);
+    box-shadow: 0 4px 16px rgba(30,79,216,0.28);
   }
-  .btn-primary:hover{ transform: translateY(-1px) scale(1.02); box-shadow: 0 6px 26px rgba(99,102,241,0.5); }
+  .btn-primary:hover{ background: var(--blue-deep); transform: translateY(-1px); }
   .btn-primary:hover svg{ transform: rotate(45deg); }
   .btn-secondary{
-    background: rgba(255,255,255,0.06);
-    color: var(--text);
-    border: 1px solid var(--card-border);
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--border);
   }
-  .btn-secondary:hover{ background: rgba(255,255,255,0.11); }
+  .btn-secondary:hover{ background: #E7EDFA; }
   .btn:active{ transform: scale(0.97); }
 
   /* ---- Particulars ---- */
+  .section-label{
+    width:100%;
+    max-width: 380px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 26px 0 6px;
+    padding: 0 16px;
+  }
   .particulars{
     width:100%;
     max-width: 380px;
     list-style:none;
-    margin: 22px 0 0;
+    margin: 0;
     padding:0;
+    border-top: 1px solid var(--border);
   }
+  .particulars li{ border-bottom: 1px solid var(--border); }
   .particulars a{
     display:flex;
     justify-content:space-between;
@@ -199,7 +186,6 @@
     gap: 14px;
     text-decoration:none;
     padding: 13px 16px;
-    border-radius: 14px;
     transition: background 0.15s ease;
   }
   .particulars a:hover{ background: var(--row-hover); }
@@ -207,16 +193,16 @@
     flex-shrink:0;
     font-family:'IBM Plex Mono', monospace;
     font-size: 0.65rem;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--ink-soft);
     padding-top: 2px;
   }
   .p-value{
     text-align:right;
     font-family:'IBM Plex Mono', monospace;
-    font-size: 0.86rem;
-    color: var(--text);
+    font-size: 0.85rem;
+    color: var(--ink);
     word-break: break-word;
   }
 
@@ -226,24 +212,23 @@
     font-size: 0.64rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--text-muted);
-    opacity: 0.7;
+    color: var(--ink-soft);
+    opacity: 0.75;
     margin:0;
   }
 
   .reveal{
     opacity:0;
-    transform: translateY(12px) scale(0.98);
-    animation: rise 0.65s cubic-bezier(0.22,1,0.36,1) forwards;
+    transform: translateY(12px);
+    animation: rise 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
   }
-  @keyframes rise{ to{ opacity:1; transform:translateY(0) scale(1); } }
+  @keyframes rise{ to{ opacity:1; transform:translateY(0); } }
   .d1{ animation-delay: 0.05s; }
-  .d2{ animation-delay: 0.18s; }
-  .d3{ animation-delay: 0.30s; }
+  .d2{ animation-delay: 0.16s; }
+  .d3{ animation-delay: 0.28s; }
 
   @media (prefers-reduced-motion: reduce){
     .reveal{ animation:none !important; opacity:1 !important; transform:none !important; }
-    .glow{ animation:none !important; }
     .btn{ transition:none; }
   }
 </style>
@@ -255,7 +240,6 @@
   <p class="kicker reveal d1">NFC Business Card</p>
 
   <div class="card-wrap reveal d2">
-    <div class="glow" aria-hidden="true"></div>
     <div class="card">
       <div class="avatar-ring">
         <img src="avatar.jpg" alt="A.K.M. Aminul Islam">
@@ -279,6 +263,7 @@
     </div>
   </div>
 
+  <p class="section-label reveal d3">Contact</p>
   <ul class="particulars reveal d3">
     <li>
       <a href="tel:+8801711392493">
@@ -292,22 +277,32 @@
         <span class="p-value">info@akassociatesbd.com</span>
       </a>
     </li>
+  </ul>
+
+  <p class="section-label reveal d3">Offices</p>
+  <ul class="particulars reveal d3">
     <li>
-      <a href="http://www.akassociatesbd.com" target="_blank" rel="noopener">
-        <span class="p-label">Web</span>
-        <span class="p-value">akassociatesbd.com</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=81-1+Kakrail%2C+1st+Floor%2C+Dhaka+1000" target="_blank" rel="noopener">
+        <span class="p-label">Kakrail&nbsp;(HQ)</span>
+        <span class="p-value">81-1 Kakrail, 1st Floor, Dhaka&nbsp;1000</span>
       </a>
     </li>
     <li>
-      <a href="https://www.google.com/maps/search/?api=1&query=81%2F1+Kakrail%2C+Dhaka+1000" target="_blank" rel="noopener">
-        <span class="p-label">Office</span>
-        <span class="p-value">81/1 Kakrail, Dhaka&nbsp;1000</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=75-76+Kakrail%2C+Suite-8B%2C+Dhaka+1000" target="_blank" rel="noopener">
+        <span class="p-label">Kakrail&nbsp;(Suite&nbsp;8B)</span>
+        <span class="p-value">75-76 Kakrail, Suite-8B, Dhaka&nbsp;1000</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/search/?api=1&query=Road+101%2C+House+16%2C+Suite-103%2C+Gulshan-2%2C+Dhaka+1212" target="_blank" rel="noopener">
+        <span class="p-label">Gulshan&nbsp;2</span>
+        <span class="p-value">Road 101, House 16, Suite-103, Gulshan-2, Dhaka&nbsp;1212</span>
       </a>
     </li>
   </ul>
 
   <footer class="reveal d3">
-    <p class="firm-line">A.K &amp; Associates — Registered Office, Dhaka</p>
+    <p class="firm-line">A.K &amp; Associates — Dhaka, Bangladesh</p>
   </footer>
 
 </div>
