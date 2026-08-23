@@ -6,335 +6,280 @@
 <title>A.K.M. Aminul Islam — A.K &amp; Associates</title>
 <meta name="description" content="Digital business card for A.K.M. Aminul Islam, GM (Admin), A.K &amp; Associates — Advocates, Tax Advisors, Consultants of Company &amp; Financial Matters.">
 <meta property="og:title" content="A.K.M. Aminul Islam — A.K &amp; Associates">
-<meta property="og:description" content="GM (Admin), A.K &amp; Associates. Tap to save contact, call, or email.">
+<meta property="og:description" content="GM (Admin), A.K &amp; Associates. Tap to save contact or call.">
 <meta property="og:type" content="profile">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314213D'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%239C7A32' stroke-width='1.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' fill='%23E6E9ED' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230B0E1A'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%238B7CF6' stroke-width='1.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='22' fill='%23F4F5F7' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#E6E9ED;
-    --paper-deep:#D9DEE6;
-    --ink:#14213D;
-    --ink-soft:#4B5468;
-    --brass:#9C7A32;
-    --brass-deep:#7C632A;
-    --oxblood:#6B2737;
-    --line:#B9C0CB;
-    --focus:#9C7A32;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --paper:#121826;
-      --paper-deep:#0C1120;
-      --ink:#ECE7D8;
-      --ink-soft:#B9B29C;
-      --brass:#C9A227;
-      --brass-deep:#A8841C;
-      --oxblood:#C97684;
-      --line:#33415A;
-      --focus:#C9A227;
-    }
+    --bg-0:#0B0E1A;
+    --bg-1:#111528;
+    --glow-a:#6366F1;
+    --glow-b:#A855F7;
+    --card-bg: rgba(255,255,255,0.055);
+    --card-border: rgba(255,255,255,0.12);
+    --text:#F4F5F7;
+    --text-muted:#9AA0B4;
+    --primary:#9C8CFB;
+    --primary-deep:#7C6AE8;
+    --divider: rgba(255,255,255,0.14);
+    --row-hover: rgba(255,255,255,0.05);
+    --focus:#B7ABFC;
   }
 
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
-    background:var(--paper);
-    background-image:
-      radial-gradient(circle at 1px 1px, rgba(20,33,61,0.05) 1px, transparent 0);
-    background-size: 22px 22px;
-    color:var(--ink);
-    font-family:'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
     min-height:100vh;
+    background:
+      radial-gradient(60% 50% at 50% 0%, rgba(99,102,241,0.20), transparent 70%),
+      var(--bg-0);
+    color:var(--text);
+    font-family:'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    padding: 8vh 20px 10vh;
+    padding: 9vh 20px 10vh;
     -webkit-font-smoothing:antialiased;
-  }
-  @media (prefers-color-scheme: dark){
-    body{
-      background-image:
-        radial-gradient(circle at 1px 1px, rgba(236,231,216,0.05) 1px, transparent 0);
-      background-size: 22px 22px;
-    }
+    overflow-x:hidden;
   }
 
   a{color:inherit;}
   a:focus-visible, button:focus-visible{
     outline: 2px solid var(--focus);
     outline-offset: 3px;
-    border-radius: 2px;
-  }
-
-  .card{
-    width:100%;
-    max-width: 440px;
-    position:relative;
-  }
-
-  @media (min-width: 480px){
-    .card{
-      border: 1px solid var(--line);
-      padding: 48px 40px 36px;
-      background: color-mix(in srgb, var(--paper) 96%, var(--ink) 4%);
-    }
-    @supports not (background: color-mix(in srgb, red, blue)) {
-      .card{ background: var(--paper); }
-    }
+    border-radius: 4px;
   }
 
   .kicker{
     text-align:center;
+    font-family:'IBM Plex Mono', monospace;
     font-size: 0.62rem;
     letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--ink-soft);
-    margin: 0 0 30px;
-    opacity: 0.8;
-  }
-
-  /* ---- Seal ---- */
-  .seal-wrap{
-    display:flex;
-    justify-content:center;
-    margin-bottom: 26px;
-  }
-  .seal{
-    width: 132px;
-    height: 132px;
-    transform: rotate(-6deg);
-  }
-  .seal-ring-text{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 8.6px;
-    letter-spacing: 2.5px;
-    fill: var(--brass);
-  }
-  .seal-outer{ fill: none; stroke: var(--brass); stroke-width: 1.4; }
-  .seal-inner{ fill: none; stroke: var(--brass); stroke-width: 0.7; opacity:0.75; }
-  .seal-mono{
-    font-family: 'Libre Caslon Display', Georgia, serif;
-    font-size: 38px;
-    fill: var(--ink);
-    text-anchor: middle;
-  }
-  .seal-dot{ fill: var(--oxblood); }
-
-  /* ---- Identity block ---- */
-  .eyebrow{
-    text-align:center;
-    font-family:'IBM Plex Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin: 0 0 10px;
-  }
-  h1{
-    text-align:center;
-    font-family:'Libre Caslon Display', Georgia, serif;
-    font-weight:400;
-    font-size: clamp(1.7rem, 6.4vw, 2.15rem);
-    line-height:1.15;
-    margin: 0 0 10px;
-    color: var(--ink);
-  }
-  .credentials{
-    text-align:center;
-    font-family:'IBM Plex Mono', monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
-    color: var(--ink-soft);
+    color: var(--text-muted);
     margin: 0 0 28px;
   }
 
-  .rule{
+  /* ---- Glass card ---- */
+  .card-wrap{
+    position:relative;
+    width:100%;
+    max-width: 380px;
+  }
+  .glow{
+    position:absolute;
+    inset: -18px;
+    z-index:-1;
+    border-radius: 32px;
+    background: linear-gradient(120deg, var(--glow-a), var(--glow-b));
+    opacity:0.45;
+    filter: blur(38px);
+    animation: breathe 6s ease-in-out infinite;
+  }
+  @keyframes breathe{
+    0%,100%{ opacity:0.4; transform:scale(1); }
+    50%{ opacity:0.6; transform:scale(1.04); }
+  }
+
+  .card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 40px 30px 32px;
+    border-radius: 28px;
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+  }
+
+  .avatar-ring{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, var(--glow-a), var(--glow-b));
+    margin-bottom: 18px;
+  }
+  .avatar-ring img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit: cover;
+    object-position: 50% 22%;
+    display:block;
+    border: 2px solid var(--bg-0);
+  }
+
+  h1{
+    font-family:'Libre Caslon Display', Georgia, serif;
+    font-weight:400;
+    font-size: 1.55rem;
+    line-height:1.2;
+    text-align:center;
+    margin: 0 0 6px;
+    color: var(--text);
+  }
+  .role{
+    text-align:center;
+    font-size: 0.85rem;
+    font-weight:500;
+    color: var(--primary);
+    margin: 0 0 16px;
+  }
+  .bio{
+    text-align:center;
+    font-size: 0.85rem;
+    line-height:1.6;
+    color: var(--text-muted);
+    margin: 0;
+    max-width: 300px;
+  }
+
+  .divider{
+    width: 48px;
+    height: 1px;
+    background: var(--divider);
+    margin: 24px 0;
     border:none;
-    border-top: 1px solid var(--line);
-    margin: 0 0 22px;
-  }
-  .rule.thin{ opacity:0.7; }
-
-  .org{
-    text-align:center;
-    font-family:'Libre Caslon Text', Georgia, serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
-    margin: 0 0 8px;
-  }
-  .tagline{
-    text-align:center;
-    font-family:'Libre Caslon Text', Georgia, serif;
-    font-style: italic;
-    font-size: 0.86rem;
-    color: var(--ink-soft);
-    line-height:1.5;
-    margin: 0 0 30px;
-    padding: 0 8px;
   }
 
-  /* ---- Actions ---- */
   .actions{
     display:flex;
-    gap: 10px;
-    margin-bottom: 30px;
+    gap:10px;
+    width:100%;
   }
   .btn{
     flex:1;
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:8px;
+    gap:7px;
     text-decoration:none;
-    font-family:'IBM Plex Sans', sans-serif;
-    font-weight:600;
     font-size: 0.86rem;
-    letter-spacing: 0.02em;
-    padding: 14px 12px;
-    border-radius: 3px;
-    min-height: 48px;
-    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    font-weight:600;
+    padding: 13px 14px;
+    border-radius: 999px;
+    min-height: 46px;
+    transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
   }
+  .btn svg{ transition: transform 0.3s ease; }
   .btn-primary{
-    background: var(--brass);
-    color: var(--paper);
+    background: linear-gradient(135deg, var(--glow-a), var(--glow-b));
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(99,102,241,0.35);
   }
-  @media (prefers-color-scheme: dark){
-    .btn-primary{ color: #121826; }
-  }
-  .btn-primary:hover{ background: var(--brass-deep); }
+  .btn-primary:hover{ transform: translateY(-1px) scale(1.02); box-shadow: 0 6px 26px rgba(99,102,241,0.5); }
+  .btn-primary:hover svg{ transform: rotate(45deg); }
   .btn-secondary{
-    background: transparent;
-    color: var(--ink);
-    border: 1px solid var(--ink);
+    background: rgba(255,255,255,0.06);
+    color: var(--text);
+    border: 1px solid var(--card-border);
   }
-  .btn-secondary:hover{ background: color-mix(in srgb, var(--ink) 8%, transparent); }
-  .btn:active{
-    transform: scale(0.97) translateY(1px);
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
-  }
+  .btn-secondary:hover{ background: rgba(255,255,255,0.11); }
+  .btn:active{ transform: scale(0.97); }
 
   /* ---- Particulars ---- */
   .particulars{
+    width:100%;
+    max-width: 380px;
     list-style:none;
-    margin:0 0 30px;
+    margin: 22px 0 0;
     padding:0;
-    border-top: 1px solid var(--line);
-  }
-  .particulars li{
-    border-bottom: 1px solid var(--line);
   }
   .particulars a{
     display:flex;
     justify-content:space-between;
     align-items:baseline;
-    gap: 16px;
+    gap: 14px;
     text-decoration:none;
-    padding: 14px 2px;
+    padding: 13px 16px;
+    border-radius: 14px;
+    transition: background 0.15s ease;
   }
-  .particulars a:hover .p-value{
-    border-bottom-color: var(--brass);
-  }
+  .particulars a:hover{ background: var(--row-hover); }
   .p-label{
     flex-shrink:0;
     font-family:'IBM Plex Mono', monospace;
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--ink-soft);
+    color: var(--text-muted);
     padding-top: 2px;
   }
   .p-value{
     text-align:right;
     font-family:'IBM Plex Mono', monospace;
-    font-size: 0.9rem;
-    color: var(--ink);
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.15s ease;
+    font-size: 0.86rem;
+    color: var(--text);
     word-break: break-word;
   }
 
-  footer{
-    text-align:center;
-  }
+  footer{ text-align:center; margin-top: 22px; }
   .firm-line{
     font-family:'IBM Plex Mono', monospace;
-    font-size: 0.66rem;
+    font-size: 0.64rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--ink-soft);
-    opacity: 0.75;
+    color: var(--text-muted);
+    opacity: 0.7;
     margin:0;
   }
 
-  /* ---- Entrance motion ---- */
   .reveal{
     opacity:0;
-    transform: translateY(10px);
-    animation: rise 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
+    transform: translateY(12px) scale(0.98);
+    animation: rise 0.65s cubic-bezier(0.22,1,0.36,1) forwards;
   }
-  .seal-wrap.reveal{
-    transform: translateY(6px) rotate(-10deg);
-    animation-name: riseSeal;
-  }
-  @keyframes rise{ to{ opacity:1; transform:translateY(0); } }
-  @keyframes riseSeal{ to{ opacity:1; transform: translateY(0) rotate(-6deg); } }
-
+  @keyframes rise{ to{ opacity:1; transform:translateY(0) scale(1); } }
   .d1{ animation-delay: 0.05s; }
-  .d2{ animation-delay: 0.16s; }
-  .d3{ animation-delay: 0.24s; }
-  .d4{ animation-delay: 0.32s; }
-  .d5{ animation-delay: 0.40s; }
-  .d6{ animation-delay: 0.48s; }
-  .d7{ animation-delay: 0.56s; }
+  .d2{ animation-delay: 0.18s; }
+  .d3{ animation-delay: 0.30s; }
 
   @media (prefers-reduced-motion: reduce){
-    .reveal, .seal-wrap.reveal{
-      animation: none !important;
-      opacity: 1 !important;
-      transform: none !important;
-    }
+    .reveal{ animation:none !important; opacity:1 !important; transform:none !important; }
+    .glow{ animation:none !important; }
     .btn{ transition:none; }
   }
 </style>
 </head>
 <body>
 
-<main class="card">
+<div style="display:flex; flex-direction:column; align-items:center; width:100%;">
 
   <p class="kicker reveal d1">NFC Business Card</p>
 
-  <div class="seal-wrap reveal">
-    <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="A.K &amp; Associates seal">
-      <path id="ring" d="M 18,100 A 82,82 0 1 1 182,100 A 82,82 0 1 1 18,100" fill="none"/>
-      <circle class="seal-outer" cx="100" cy="100" r="94"/>
-      <circle class="seal-inner" cx="100" cy="100" r="66"/>
-      <text class="seal-ring-text">
-        <textPath href="#ring" startOffset="2%">A · K &amp; ASSOCIATES ✦ DHAKA, BANGLADESH ✦ ADVOCATES ✦ TAX ADVISORS ✦</textPath>
-      </text>
-      <text class="seal-mono" x="100" y="115">AK</text>
-      <circle class="seal-dot" cx="100" cy="128" r="2.4"/>
-    </svg>
+  <div class="card-wrap reveal d2">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="card">
+      <div class="avatar-ring">
+        <img src="avatar.jpg" alt="A.K.M. Aminul Islam">
+      </div>
+      <h1>A.K.M. Aminul Islam</h1>
+      <p class="role">GM (Admin) · A.K &amp; Associates</p>
+      <p class="bio">Advocate, Tax Advisors, Consultants of Company &amp; Financial Matters.</p>
+
+      <hr class="divider">
+
+      <div class="actions">
+        <a class="btn btn-primary" href="akm_islam_final.vcf">
+          <span>Save Contact</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <a class="btn btn-secondary" href="tel:+8801711392493">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call</span>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <p class="eyebrow reveal d2">GM (Admin)</p>
-  <h1 class="reveal d2">A.K.M.&nbsp;Aminul&nbsp;Islam</h1>
-  <p class="credentials reveal d2">B.Sc&nbsp;·&nbsp;M.Sc&nbsp;·&nbsp;LL.B</p>
-
-  <hr class="rule reveal d3">
-
-  <p class="org reveal d3">A.K &amp; Associates</p>
-  <p class="tagline reveal d3">Advocate · Tax&nbsp;Advisors · Consultants of&nbsp;Company &amp; Financial&nbsp;Matters</p>
-
-  <div class="actions reveal d4">
-    <a class="btn btn-primary" href="akm_islam_final.vcf">Save Contact</a>
-    <a class="btn btn-secondary" href="tel:+8801711392493">Call</a>
-  </div>
-
-  <ul class="particulars reveal d5">
+  <ul class="particulars reveal d3">
     <li>
       <a href="tel:+8801711392493">
         <span class="p-label">Mobile</span>
@@ -361,11 +306,11 @@
     </li>
   </ul>
 
-  <footer class="reveal d6">
+  <footer class="reveal d3">
     <p class="firm-line">A.K &amp; Associates — Registered Office, Dhaka</p>
   </footer>
 
-</main>
+</div>
 
 </body>
 </html>
