@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.K.M. Aminul Islam — A.K &amp; Associates</title>
+<meta name="description" content="Digital business card for A.K.M. Aminul Islam, GM (Admin), A.K &amp; Associates — Advocates, Tax Advisors, Consultants of Company &amp; Financial Matters.">
+<meta property="og:title" content="A.K.M. Aminul Islam — A.K &amp; Associates">
+<meta property="og:description" content="GM (Admin), A.K &amp; Associates. Tap to save contact, call, or email.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314213D'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%239C7A32' stroke-width='1.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' fill='%23E6E9ED' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E6E9ED;
+    --paper-deep:#D9DEE6;
+    --ink:#14213D;
+    --ink-soft:#4B5468;
+    --brass:#9C7A32;
+    --brass-deep:#7C632A;
+    --oxblood:#6B2737;
+    --line:#B9C0CB;
+    --focus:#9C7A32;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#121826;
+      --paper-deep:#0C1120;
+      --ink:#ECE7D8;
+      --ink-soft:#B9B29C;
+      --brass:#C9A227;
+      --brass-deep:#A8841C;
+      --oxblood:#C97684;
+      --line:#33415A;
+      --focus:#C9A227;
+    }
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(20,33,61,0.05) 1px, transparent 0);
+    background-size: 22px 22px;
+    color:var(--ink);
+    font-family:'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding: 8vh 20px 10vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-color-scheme: dark){
+    body{
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(236,231,216,0.05) 1px, transparent 0);
+      background-size: 22px 22px;
+    }
+  }
+
+  a{color:inherit;}
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .card{
+    width:100%;
+    max-width: 440px;
+    position:relative;
+  }
+
+  @media (min-width: 480px){
+    .card{
+      border: 1px solid var(--line);
+      padding: 48px 40px 36px;
+      background: color-mix(in srgb, var(--paper) 96%, var(--ink) 4%);
+    }
+    @supports not (background: color-mix(in srgb, red, blue)) {
+      .card{ background: var(--paper); }
+    }
+  }
+
+  .kicker{
+    text-align:center;
+    font-size: 0.62rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 30px;
+    opacity: 0.8;
+  }
+
+  /* ---- Seal ---- */
+  .seal-wrap{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 26px;
+  }
+  .seal{
+    width: 132px;
+    height: 132px;
+    transform: rotate(-6deg);
+  }
+  .seal-ring-text{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8.6px;
+    letter-spacing: 2.5px;
+    fill: var(--brass);
+  }
+  .seal-outer{ fill: none; stroke: var(--brass); stroke-width: 1.4; }
+  .seal-inner{ fill: none; stroke: var(--brass); stroke-width: 0.7; opacity:0.75; }
+  .seal-mono{
+    font-family: 'Libre Caslon Display', Georgia, serif;
+    font-size: 38px;
+    fill: var(--ink);
+    text-anchor: middle;
+  }
+  .seal-dot{ fill: var(--oxblood); }
+
+  /* ---- Identity block ---- */
+  .eyebrow{
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin: 0 0 10px;
+  }
+  h1{
+    text-align:center;
+    font-family:'Libre Caslon Display', Georgia, serif;
+    font-weight:400;
+    font-size: clamp(1.7rem, 6.4vw, 2.15rem);
+    line-height:1.15;
+    margin: 0 0 10px;
+    color: var(--ink);
+  }
+  .credentials{
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    margin: 0 0 28px;
+  }
+
+  .rule{
+    border:none;
+    border-top: 1px solid var(--line);
+    margin: 0 0 22px;
+  }
+  .rule.thin{ opacity:0.7; }
+
+  .org{
+    text-align:center;
+    font-family:'Libre Caslon Text', Georgia, serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    margin: 0 0 8px;
+  }
+  .tagline{
+    text-align:center;
+    font-family:'Libre Caslon Text', Georgia, serif;
+    font-style: italic;
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    line-height:1.5;
+    margin: 0 0 30px;
+    padding: 0 8px;
+  }
+
+  /* ---- Actions ---- */
+  .actions{
+    display:flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .btn{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    text-decoration:none;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight:600;
+    font-size: 0.86rem;
+    letter-spacing: 0.02em;
+    padding: 14px 12px;
+    border-radius: 3px;
+    min-height: 48px;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  }
+  .btn-primary{
+    background: var(--brass);
+    color: var(--paper);
+  }
+  @media (prefers-color-scheme: dark){
+    .btn-primary{ color: #121826; }
+  }
+  .btn-primary:hover{ background: var(--brass-deep); }
+  .btn-secondary{
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+  }
+  .btn-secondary:hover{ background: color-mix(in srgb, var(--ink) 8%, transparent); }
+  .btn:active{
+    transform: scale(0.97) translateY(1px);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+  }
+
+  /* ---- Particulars ---- */
+  .particulars{
+    list-style:none;
+    margin:0 0 30px;
+    padding:0;
+    border-top: 1px solid var(--line);
+  }
+  .particulars li{
+    border-bottom: 1px solid var(--line);
+  }
+  .particulars a{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap: 16px;
+    text-decoration:none;
+    padding: 14px 2px;
+  }
+  .particulars a:hover .p-value{
+    border-bottom-color: var(--brass);
+  }
+  .p-label{
+    flex-shrink:0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding-top: 2px;
+  }
+  .p-value{
+    text-align:right;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--ink);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+    word-break: break-word;
+  }
+
+  footer{
+    text-align:center;
+  }
+  .firm-line{
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    opacity: 0.75;
+    margin:0;
+  }
+
+  /* ---- Entrance motion ---- */
+  .reveal{
+    opacity:0;
+    transform: translateY(10px);
+    animation: rise 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
+  }
+  .seal-wrap.reveal{
+    transform: translateY(6px) rotate(-10deg);
+    animation-name: riseSeal;
+  }
+  @keyframes rise{ to{ opacity:1; transform:translateY(0); } }
+  @keyframes riseSeal{ to{ opacity:1; transform: translateY(0) rotate(-6deg); } }
+
+  .d1{ animation-delay: 0.05s; }
+  .d2{ animation-delay: 0.16s; }
+  .d3{ animation-delay: 0.24s; }
+  .d4{ animation-delay: 0.32s; }
+  .d5{ animation-delay: 0.40s; }
+  .d6{ animation-delay: 0.48s; }
+  .d7{ animation-delay: 0.56s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .seal-wrap.reveal{
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .btn{ transition:none; }
+  }
+</style>
+</head>
+<body>
+
+<main class="card">
+
+  <p class="kicker reveal d1">NFC Business Card</p>
+
+  <div class="seal-wrap reveal">
+    <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="A.K &amp; Associates seal">
+      <path id="ring" d="M 18,100 A 82,82 0 1 1 182,100 A 82,82 0 1 1 18,100" fill="none"/>
+      <circle class="seal-outer" cx="100" cy="100" r="94"/>
+      <circle class="seal-inner" cx="100" cy="100" r="66"/>
+      <text class="seal-ring-text">
+        <textPath href="#ring" startOffset="2%">A · K &amp; ASSOCIATES ✦ DHAKA, BANGLADESH ✦ ADVOCATES ✦ TAX ADVISORS ✦</textPath>
+      </text>
+      <text class="seal-mono" x="100" y="115">AK</text>
+      <circle class="seal-dot" cx="100" cy="128" r="2.4"/>
+    </svg>
+  </div>
+
+  <p class="eyebrow reveal d2">GM (Admin)</p>
+  <h1 class="reveal d2">A.K.M.&nbsp;Aminul&nbsp;Islam</h1>
+  <p class="credentials reveal d2">B.Sc&nbsp;·&nbsp;M.Sc&nbsp;·&nbsp;LL.B</p>
+
+  <hr class="rule reveal d3">
+
+  <p class="org reveal d3">A.K &amp; Associates</p>
+  <p class="tagline reveal d3">Advocate · Tax&nbsp;Advisors · Consultants of&nbsp;Company &amp; Financial&nbsp;Matters</p>
+
+  <div class="actions reveal d4">
+    <a class="btn btn-primary" href="akm_islam_final.vcf">Save Contact</a>
+    <a class="btn btn-secondary" href="tel:+8801711392493">Call</a>
+  </div>
+
+  <ul class="particulars reveal d5">
+    <li>
+      <a href="tel:+8801711392493">
+        <span class="p-label">Mobile</span>
+        <span class="p-value">+880&nbsp;1711-392493</span>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:info@akassociatesbd.com">
+        <span class="p-label">Email</span>
+        <span class="p-value">info@akassociatesbd.com</span>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.akassociatesbd.com" target="_blank" rel="noopener">
+        <span class="p-label">Web</span>
+        <span class="p-value">akassociatesbd.com</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/search/?api=1&query=81%2F1+Kakrail%2C+Dhaka+1000" target="_blank" rel="noopener">
+        <span class="p-label">Office</span>
+        <span class="p-value">81/1 Kakrail, Dhaka&nbsp;1000</span>
+      </a>
+    </li>
+  </ul>
+
+  <footer class="reveal d6">
+    <p class="firm-line">A.K &amp; Associates — Registered Office, Dhaka</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
