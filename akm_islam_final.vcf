@@ -6,5 +6,10 @@ ORG:A.K & Associates
 TITLE:GM (Admin)
 TEL;TYPE=CELL,PREF:+8801711392493
 URL:https://nfcvcard.github.io/niponcard/
-ADR;TYPE=WORK:;;81/1 Kakrail;Dhaka;;1000;Bangladesh
+item1.ADR;TYPE=WORK:;;81/1 Kakrail, 1st Floor;Dhaka;;1000;Bangladesh
+item1.X-ABLabel:Kakrail (HQ)
+item2.ADR;TYPE=WORK:;;Suite 8B, 75-76 Kakrail;Dhaka;;1000;Bangladesh
+item2.X-ABLabel:Kakrail (Suite 8B)
+item3.ADR;TYPE=WORK:;;House 08, Road 107, Flat C-3;Gulshan 2, Dhaka;;1212;Bangladesh
+item3.X-ABLabel:Gulshan 2
 END:VCARD
